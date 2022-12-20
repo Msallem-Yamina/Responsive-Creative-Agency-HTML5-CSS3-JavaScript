@@ -109,9 +109,8 @@ window.onscroll = function (){
     let winscr = this.pageYOffset; 
     if (winscr > (skoffsettop + skouterheight - winheight)){     
       let allSkills = document.querySelectorAll(".skill .prog span");
-      allSkills.forEach(s => {
-        s.style.width = "70%";
-        //   s.style.width = s.dataset.prog;
+      allSkills.forEach((span) => {
+         span.style.width = span.dataset.prog;
         });
      }
 }
